@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package example;
+
+service Greeter {
+  rpc SayNumbers (Request) returns (Reply);
+}
+
+message Request {
+    int32 a = 1;
+    int32 b = 2;
+    int32 op = 3;
+}
+
+message Reply {
+  int32 result = 1;
+}

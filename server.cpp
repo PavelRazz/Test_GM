@@ -16,15 +16,19 @@ using example::Reply;
 class GreeterServiceImpl final : public Greeter::Service {
 public:
     Status SayNumbers(ServerContext* context, const Request* request, Reply* reply) override {
-        int a = request->a();
-        int b = request->b();
-        int op = request->op();
-        int result = 0;
+        int64_t a = request->a();
+        int64_t b = request->b();
+        int64_t op = request->op();
+        int64_t result = 0;
+        //Каждая цифра  отвечает за операцию, 1 сложение, 2 вычитание, 3 умножение, 4 деление
         switch(op){
-            case 1: result = a + b;break;
-            case 2: result = a - b;break;
-            case 3: result = a * b;break;
-            case 4: result = a / b;break;
+            case 1: result = a + b; break;
+            case 2: result = a - b; break;
+            case 3: result = a * b; break;
+            case 4: 
+                if (b == 0) return Status(grpc::INVALID_ARGUMENT, "Деление на ноль");//проверка деления на 0 
+                result = a / b; 
+                break;
             default:
                 return Status(grpc::INVALID_ARGUMENT, "Не верная операция");
         }

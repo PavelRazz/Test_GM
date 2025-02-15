@@ -7,11 +7,11 @@ service Greeter {
 }
 
 message Request {
-    int32 a = 1;
-    int32 b = 2;
-    int32 op = 3;
+    int64 a = 1;
+    int64 b = 2;
+    int64 op = 3;
 }
 
 message Reply {
-  int32 result = 1;
+  int64 result = 1;
 }

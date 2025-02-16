@@ -1,4 +1,0 @@
-/root/grps/build/CMakeFiles/server.dir
-/root/grps/build/CMakeFiles/client.dir
-/root/grps/build/CMakeFiles/edit_cache.dir
-/root/grps/build/CMakeFiles/rebuild_cache.dir

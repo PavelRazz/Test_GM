@@ -142,107 +142,107 @@ client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
 
-client.o: client.cpp.o
-.PHONY : client.o
+generated/service.grpc.pb.o: generated/service.grpc.pb.cc.o
+.PHONY : generated/service.grpc.pb.o
 
 # target to build an object file
-client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.cpp.o
-.PHONY : client.cpp.o
+generated/service.grpc.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/generated/service.grpc.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/generated/service.grpc.pb.cc.o
+.PHONY : generated/service.grpc.pb.cc.o
 
-client.i: client.cpp.i
-.PHONY : client.i
+generated/service.grpc.pb.i: generated/service.grpc.pb.cc.i
+.PHONY : generated/service.grpc.pb.i
 
 # target to preprocess a source file
-client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.cpp.i
-.PHONY : client.cpp.i
+generated/service.grpc.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/generated/service.grpc.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/generated/service.grpc.pb.cc.i
+.PHONY : generated/service.grpc.pb.cc.i
 
-client.s: client.cpp.s
-.PHONY : client.s
+generated/service.grpc.pb.s: generated/service.grpc.pb.cc.s
+.PHONY : generated/service.grpc.pb.s
 
 # target to generate assembly for a file
-client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.cpp.s
-.PHONY : client.cpp.s
+generated/service.grpc.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/generated/service.grpc.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/generated/service.grpc.pb.cc.s
+.PHONY : generated/service.grpc.pb.cc.s
 
-server.o: server.cpp.o
-.PHONY : server.o
+generated/service.pb.o: generated/service.pb.cc.o
+.PHONY : generated/service.pb.o
 
 # target to build an object file
-server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.cpp.o
-.PHONY : server.cpp.o
+generated/service.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/generated/service.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/generated/service.pb.cc.o
+.PHONY : generated/service.pb.cc.o
 
-server.i: server.cpp.i
-.PHONY : server.i
+generated/service.pb.i: generated/service.pb.cc.i
+.PHONY : generated/service.pb.i
 
 # target to preprocess a source file
-server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.cpp.i
-.PHONY : server.cpp.i
+generated/service.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/generated/service.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/generated/service.pb.cc.i
+.PHONY : generated/service.pb.cc.i
 
-server.s: server.cpp.s
-.PHONY : server.s
+generated/service.pb.s: generated/service.pb.cc.s
+.PHONY : generated/service.pb.s
 
 # target to generate assembly for a file
-server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.cpp.s
-.PHONY : server.cpp.s
+generated/service.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/generated/service.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/generated/service.pb.cc.s
+.PHONY : generated/service.pb.cc.s
 
-service.grpc.pb.o: service.grpc.pb.cc.o
-.PHONY : service.grpc.pb.o
+src/client.o: src/client.cpp.o
+.PHONY : src/client.o
 
 # target to build an object file
-service.grpc.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/service.grpc.pb.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/service.grpc.pb.cc.o
-.PHONY : service.grpc.pb.cc.o
+src/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.o
+.PHONY : src/client.cpp.o
 
-service.grpc.pb.i: service.grpc.pb.cc.i
-.PHONY : service.grpc.pb.i
+src/client.i: src/client.cpp.i
+.PHONY : src/client.i
 
 # target to preprocess a source file
-service.grpc.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/service.grpc.pb.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/service.grpc.pb.cc.i
-.PHONY : service.grpc.pb.cc.i
+src/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.i
+.PHONY : src/client.cpp.i
 
-service.grpc.pb.s: service.grpc.pb.cc.s
-.PHONY : service.grpc.pb.s
+src/client.s: src/client.cpp.s
+.PHONY : src/client.s
 
 # target to generate assembly for a file
-service.grpc.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/service.grpc.pb.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/service.grpc.pb.cc.s
-.PHONY : service.grpc.pb.cc.s
+src/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.s
+.PHONY : src/client.cpp.s
 
-service.pb.o: service.pb.cc.o
-.PHONY : service.pb.o
+src/server.o: src/server.cpp.o
+.PHONY : src/server.o
 
 # target to build an object file
-service.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/service.pb.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/service.pb.cc.o
-.PHONY : service.pb.cc.o
+src/server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.o
+.PHONY : src/server.cpp.o
 
-service.pb.i: service.pb.cc.i
-.PHONY : service.pb.i
+src/server.i: src/server.cpp.i
+.PHONY : src/server.i
 
 # target to preprocess a source file
-service.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/service.pb.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/service.pb.cc.i
-.PHONY : service.pb.cc.i
+src/server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.i
+.PHONY : src/server.cpp.i
 
-service.pb.s: service.pb.cc.s
-.PHONY : service.pb.s
+src/server.s: src/server.cpp.s
+.PHONY : src/server.s
 
 # target to generate assembly for a file
-service.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/service.pb.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/service.pb.cc.s
-.PHONY : service.pb.cc.s
+src/server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.s
+.PHONY : src/server.cpp.s
 
 # Help Target
 help:
@@ -254,18 +254,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... client"
 	@echo "... server"
-	@echo "... client.o"
-	@echo "... client.i"
-	@echo "... client.s"
-	@echo "... server.o"
-	@echo "... server.i"
-	@echo "... server.s"
-	@echo "... service.grpc.pb.o"
-	@echo "... service.grpc.pb.i"
-	@echo "... service.grpc.pb.s"
-	@echo "... service.pb.o"
-	@echo "... service.pb.i"
-	@echo "... service.pb.s"
+	@echo "... generated/service.grpc.pb.o"
+	@echo "... generated/service.grpc.pb.i"
+	@echo "... generated/service.grpc.pb.s"
+	@echo "... generated/service.pb.o"
+	@echo "... generated/service.pb.i"
+	@echo "... generated/service.pb.s"
+	@echo "... src/client.o"
+	@echo "... src/client.i"
+	@echo "... src/client.s"
+	@echo "... src/server.o"
+	@echo "... src/server.i"
+	@echo "... src/server.s"
 .PHONY : help
 
 

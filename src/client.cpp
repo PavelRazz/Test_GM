@@ -44,7 +44,7 @@ private:
 int main() {
     GreeterClient client(grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials()));
     int64_t a, b, op;
-    std::cout << "Введите 2 числа и операцию (1(+), 2(-), 3(*), 4(/)): ";
+    std::cout << "Enter 2 numbers and an operation (1(+), 2(-), 3(*), 4(/)): ";
     std::cin >> a >> b >> op;
  
     std::string errormessage;
@@ -52,9 +52,9 @@ int main() {
     int64_t result = client.SayNumbers(a, b, op, errormessage);
 
     if (errormessage.empty()) {
-        std::cout << "Ответ: " << result << std::endl;
+        std::cout << "Answer: " << result << std::endl;
     } else {
-        std::cerr << "Ошибка: " << errormessage << std::endl;
+        std::cerr << "Error: " << errormessage << std::endl;
     }
     return 0;
 }

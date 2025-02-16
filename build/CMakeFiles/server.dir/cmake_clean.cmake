@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/server.dir/server.cpp.o"
-  "CMakeFiles/server.dir/server.cpp.o.d"
-  "CMakeFiles/server.dir/service.grpc.pb.cc.o"
-  "CMakeFiles/server.dir/service.grpc.pb.cc.o.d"
-  "CMakeFiles/server.dir/service.pb.cc.o"
-  "CMakeFiles/server.dir/service.pb.cc.o.d"
+  "CMakeFiles/server.dir/generated/service.grpc.pb.cc.o"
+  "CMakeFiles/server.dir/generated/service.grpc.pb.cc.o.d"
+  "CMakeFiles/server.dir/generated/service.pb.cc.o"
+  "CMakeFiles/server.dir/generated/service.pb.cc.o.d"
+  "CMakeFiles/server.dir/src/server.cpp.o"
+  "CMakeFiles/server.dir/src/server.cpp.o.d"
   "server"
   "server.pdb"
 )

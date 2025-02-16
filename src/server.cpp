@@ -26,11 +26,11 @@ public:
             case 2: result = a - b; break;
             case 3: result = a * b; break;
             case 4: 
-                if (b == 0) return Status(grpc::INVALID_ARGUMENT, "Деление на ноль");//проверка деления на 0 
+                if (b == 0) return Status(grpc::INVALID_ARGUMENT, "Division by zero");//проверка деления на 0 
                 result = a / b; 
                 break;
             default:
-                return Status(grpc::INVALID_ARGUMENT, "Не верная операция");
+                return Status(grpc::INVALID_ARGUMENT, "Invalid operation");
         }
         reply->set_result(result);
         return Status::OK;

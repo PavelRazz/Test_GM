@@ -69,60 +69,60 @@ include CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server.dir/flags.make
 
-CMakeFiles/server.dir/server.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/server.cpp.o: ../server.cpp
-CMakeFiles/server.dir/server.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/grps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/server.cpp.o -MF CMakeFiles/server.dir/server.cpp.o.d -o CMakeFiles/server.dir/server.cpp.o -c /root/grps/server.cpp
+CMakeFiles/server.dir/src/server.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/server.cpp.o: ../src/server.cpp
+CMakeFiles/server.dir/src/server.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/grps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/server.cpp.o -MF CMakeFiles/server.dir/src/server.cpp.o.d -o CMakeFiles/server.dir/src/server.cpp.o -c /root/grps/src/server.cpp
 
-CMakeFiles/server.dir/server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/grps/server.cpp > CMakeFiles/server.dir/server.cpp.i
+CMakeFiles/server.dir/src/server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/grps/src/server.cpp > CMakeFiles/server.dir/src/server.cpp.i
 
-CMakeFiles/server.dir/server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/grps/server.cpp -o CMakeFiles/server.dir/server.cpp.s
+CMakeFiles/server.dir/src/server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/grps/src/server.cpp -o CMakeFiles/server.dir/src/server.cpp.s
 
-CMakeFiles/server.dir/service.grpc.pb.cc.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/service.grpc.pb.cc.o: ../service.grpc.pb.cc
-CMakeFiles/server.dir/service.grpc.pb.cc.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/grps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/service.grpc.pb.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/service.grpc.pb.cc.o -MF CMakeFiles/server.dir/service.grpc.pb.cc.o.d -o CMakeFiles/server.dir/service.grpc.pb.cc.o -c /root/grps/service.grpc.pb.cc
+CMakeFiles/server.dir/generated/service.grpc.pb.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/generated/service.grpc.pb.cc.o: ../generated/service.grpc.pb.cc
+CMakeFiles/server.dir/generated/service.grpc.pb.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/grps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/generated/service.grpc.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/generated/service.grpc.pb.cc.o -MF CMakeFiles/server.dir/generated/service.grpc.pb.cc.o.d -o CMakeFiles/server.dir/generated/service.grpc.pb.cc.o -c /root/grps/generated/service.grpc.pb.cc
 
-CMakeFiles/server.dir/service.grpc.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/service.grpc.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/grps/service.grpc.pb.cc > CMakeFiles/server.dir/service.grpc.pb.cc.i
+CMakeFiles/server.dir/generated/service.grpc.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/generated/service.grpc.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/grps/generated/service.grpc.pb.cc > CMakeFiles/server.dir/generated/service.grpc.pb.cc.i
 
-CMakeFiles/server.dir/service.grpc.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/service.grpc.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/grps/service.grpc.pb.cc -o CMakeFiles/server.dir/service.grpc.pb.cc.s
+CMakeFiles/server.dir/generated/service.grpc.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/generated/service.grpc.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/grps/generated/service.grpc.pb.cc -o CMakeFiles/server.dir/generated/service.grpc.pb.cc.s
 
-CMakeFiles/server.dir/service.pb.cc.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/service.pb.cc.o: ../service.pb.cc
-CMakeFiles/server.dir/service.pb.cc.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/grps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/service.pb.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/service.pb.cc.o -MF CMakeFiles/server.dir/service.pb.cc.o.d -o CMakeFiles/server.dir/service.pb.cc.o -c /root/grps/service.pb.cc
+CMakeFiles/server.dir/generated/service.pb.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/generated/service.pb.cc.o: ../generated/service.pb.cc
+CMakeFiles/server.dir/generated/service.pb.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/grps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/generated/service.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/generated/service.pb.cc.o -MF CMakeFiles/server.dir/generated/service.pb.cc.o.d -o CMakeFiles/server.dir/generated/service.pb.cc.o -c /root/grps/generated/service.pb.cc
 
-CMakeFiles/server.dir/service.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/service.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/grps/service.pb.cc > CMakeFiles/server.dir/service.pb.cc.i
+CMakeFiles/server.dir/generated/service.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/generated/service.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/grps/generated/service.pb.cc > CMakeFiles/server.dir/generated/service.pb.cc.i
 
-CMakeFiles/server.dir/service.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/service.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/grps/service.pb.cc -o CMakeFiles/server.dir/service.pb.cc.s
+CMakeFiles/server.dir/generated/service.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/generated/service.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/grps/generated/service.pb.cc -o CMakeFiles/server.dir/generated/service.pb.cc.s
 
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/server.cpp.o" \
-"CMakeFiles/server.dir/service.grpc.pb.cc.o" \
-"CMakeFiles/server.dir/service.pb.cc.o"
+"CMakeFiles/server.dir/src/server.cpp.o" \
+"CMakeFiles/server.dir/generated/service.grpc.pb.cc.o" \
+"CMakeFiles/server.dir/generated/service.pb.cc.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
-server: CMakeFiles/server.dir/server.cpp.o
-server: CMakeFiles/server.dir/service.grpc.pb.cc.o
-server: CMakeFiles/server.dir/service.pb.cc.o
+server: CMakeFiles/server.dir/src/server.cpp.o
+server: CMakeFiles/server.dir/generated/service.grpc.pb.cc.o
+server: CMakeFiles/server.dir/generated/service.pb.cc.o
 server: CMakeFiles/server.dir/build.make
 server: /usr/lib/x86_64-linux-gnu/libabsl_base.so.20210324.0.0
 server: /usr/lib/x86_64-linux-gnu/libabsl_raw_logging_internal.so.20210324.0.0
